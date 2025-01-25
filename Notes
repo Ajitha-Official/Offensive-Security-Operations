@@ -1,0 +1,29 @@
+__Offensive Security__ refers to proactive and adversarial approaches to protecting computer systems, networks, and individuals from attacks. It includes techniques such as penetration testing, red teaming, and vulnerability assessments, all aimed at identifying and mitigating potential security weaknesses before malicious actors can exploit them.
+
+Importance of Offensive Security
+Planning and Reconnaissance 
+Testing Vulnerabilities 
+Analysis and Reporting 
+
+Types of Penetration Tests
+Blackbox Testing (No Knowledge) - You are given no information to start with - useful if the company also wants to know how discoverable they are in reconnaissance.
+Greybox Testing (Partial Knowledge)  - You are given some knowledge of the company. The company has decided that some bits aren't worth the time and money and wants to focus on specific aspects of its security posture.
+Whitebox Testing (Full Knowledge)  - Here is a map of our infrastructure - no recon work needed, let's see how hardy these machines are.
+
+Legal vs. Ethical - Legal is clear-cut, and is determined by pre-engagement agreements that we'll discuss further in the next section. Ethical is harder to pin down, and has to do with what is right or wrong in accordance with an individual’s belief system.
+
+Types of Hackers
+White Hat - The good guy, the ethical hacker, the hero. You!
+Black Hat - The bad guy, no ethics, operating with malicious intent. Maybe they're part of some cyber gang, or maybe they just hack before asking if they're allowed, and then indicate they've found these weaknesses post-exploit. Easy to accrue a good win-rate when you've already hacked them before offering your services.
+Grey Hat - These hats operate in the nebulous area in-between. They just want to work. Ethical, unethical, no matter - these are your rogues-for-hire.
+
+Pre-Engagement Checklist:
+Non-Disclosure Agreement (NDA) - Ensures confidentiality and protect sensitive information exchanged between the parties.
+Questionnaire - After initial contact with the client, we'll typically provide a questionnaire that outlines our services and the types of tests we offer and asks them to provide more information about what they want from the assessment. This is important for determining what the client wants from the test/what they place most importance on.
+Statement of Work (SoW): This one is fairly standard for any contract. It specifies the work to be done and covers the tasks, deliverables, and timeline of the penetration test.
+Scope - Defines the boundaries of the penetration test, including the systems, networks, applications, and (potentially) physical locations that are to be assessed - in other words, WHAT is to be tested. Scope can be described in terms of IP addresses, domains and subdomains, physical addresses, or encompassing statements like "all owned assets."
+Rules of Engagement (RoE) - Defines HOW in-scope assets are to be tested, specifying what methods, tools, and techniques are permissible - it is the closest we get to agreeing on ethical hacking before the engagement. RoE are particularly crucial in Red Team Operations, which focus on adversary emulation to test an organization's Blue Team. These operations typically have fewer restrictions to realistically simulate adversarial behavior. RoE must be clearly communicated and agreed upon by all stakeholders to ensure a controlled and effective testing environment.
+
+Post-Engagement
+Pentest Report - This describes what you've done, how you've done it, the vulnerabilities you've discovered, their level of risk, and recommended mitigations. You'll also want to include some evidence, such as screenshots and logs, to support your findings.
+Letter of Attestation - Provided to publicly validate the company's performance in terms of controls, usually to satisfy/are compliant with certain regulatory bodies. Such bodies include PCI-DSS for those with payment systems, HIPAA for healthcare providers, CISA for critical infrastructure, ISO 27001 (for business contexts) and so on. This may be included along with the pentest report.
