@@ -1,29 +1,296 @@
-__Offensive Security__ refers to proactive and adversarial approaches to protecting computer systems, networks, and individuals from attacks. It includes techniques such as penetration testing, red teaming, and vulnerability assessments, all aimed at identifying and mitigating potential security weaknesses before malicious actors can exploit them.
+# Offensive Security refers to proactive and adversarial approaches to protecting computer systems, networks, and individuals from attacks. It includes techniques such as penetration testing, red teaming, and vulnerability assessments, all aimed at identifying and mitigating potential security weaknesses before malicious actors can exploit them.
 
-Importance of Offensive Security
-Planning and Reconnaissance 
-Testing Vulnerabilities 
-Analysis and Reporting 
+**Importance of Offensive Security**
+1. Planning and Reconnaissance 
+2. Testing Vulnerabilities 
+3. Analysis and Reporting 
 
-Types of Penetration Tests
-Blackbox Testing (No Knowledge) - You are given no information to start with - useful if the company also wants to know how discoverable they are in reconnaissance.
-Greybox Testing (Partial Knowledge)  - You are given some knowledge of the company. The company has decided that some bits aren't worth the time and money and wants to focus on specific aspects of its security posture.
-Whitebox Testing (Full Knowledge)  - Here is a map of our infrastructure - no recon work needed, let's see how hardy these machines are.
+**Types of Penetration Tests**
+- Blackbox Testing (No Knowledge) - You are given no information to start with - useful if the company also wants to know how discoverable they are in reconnaissance.
+- Greybox Testing (Partial Knowledge)  - You are given some knowledge of the company. The company has decided that some bits aren't worth the time and money and wants to focus on specific aspects of its security posture.
+- Whitebox Testing (Full Knowledge)  - Here is a map of our infrastructure - no recon work needed, let's see how hardy these machines are.
 
-Legal vs. Ethical - Legal is clear-cut, and is determined by pre-engagement agreements that we'll discuss further in the next section. Ethical is harder to pin down, and has to do with what is right or wrong in accordance with an individual’s belief system.
+**Legal vs. Ethical** - Legal is clear-cut, and is determined by pre-engagement agreements that we'll discuss further in the next section. Ethical is harder to pin down, and has to do with what is right or wrong in accordance with an individual’s belief system.
 
-Types of Hackers
-White Hat - The good guy, the ethical hacker, the hero. You!
-Black Hat - The bad guy, no ethics, operating with malicious intent. Maybe they're part of some cyber gang, or maybe they just hack before asking if they're allowed, and then indicate they've found these weaknesses post-exploit. Easy to accrue a good win-rate when you've already hacked them before offering your services.
-Grey Hat - These hats operate in the nebulous area in-between. They just want to work. Ethical, unethical, no matter - these are your rogues-for-hire.
+**Types of Hackers**
+> White Hat - The good guy, the ethical hacker, the hero. You!
+> Black Hat - The bad guy, no ethics, operating with malicious intent. Maybe they're part of some cyber gang, or maybe they just hack before asking if they're allowed, and then indicate they've found these weaknesses post-exploit. Easy to accrue a good win-rate when you've already hacked them before offering your services.
+> Grey Hat - These hats operate in the nebulous area in-between. They just want to work. Ethical, unethical, no matter - these are your rogues-for-hire.
 
-Pre-Engagement Checklist:
-Non-Disclosure Agreement (NDA) - Ensures confidentiality and protect sensitive information exchanged between the parties.
-Questionnaire - After initial contact with the client, we'll typically provide a questionnaire that outlines our services and the types of tests we offer and asks them to provide more information about what they want from the assessment. This is important for determining what the client wants from the test/what they place most importance on.
-Statement of Work (SoW): This one is fairly standard for any contract. It specifies the work to be done and covers the tasks, deliverables, and timeline of the penetration test.
-Scope - Defines the boundaries of the penetration test, including the systems, networks, applications, and (potentially) physical locations that are to be assessed - in other words, WHAT is to be tested. Scope can be described in terms of IP addresses, domains and subdomains, physical addresses, or encompassing statements like "all owned assets."
-Rules of Engagement (RoE) - Defines HOW in-scope assets are to be tested, specifying what methods, tools, and techniques are permissible - it is the closest we get to agreeing on ethical hacking before the engagement. RoE are particularly crucial in Red Team Operations, which focus on adversary emulation to test an organization's Blue Team. These operations typically have fewer restrictions to realistically simulate adversarial behavior. RoE must be clearly communicated and agreed upon by all stakeholders to ensure a controlled and effective testing environment.
+**Pre-Engagement Checklist:**
+> Non-Disclosure Agreement (NDA) - Ensures confidentiality and protect sensitive information exchanged between the parties.
+> Questionnaire - After initial contact with the client, we'll typically provide a questionnaire that outlines our services and the types of tests we offer and asks them to provide more information about what they want from the assessment. This is important for determining what the client wants from the test/what they place most importance on.
+> Statement of Work (SoW): This one is fairly standard for any contract. It specifies the work to be done and covers the tasks, deliverables, and timeline of the penetration test.
+> Scope - Defines the boundaries of the penetration test, including the systems, networks, applications, and (potentially) physical locations that are to be assessed - in other words, WHAT is to be tested. Scope can be described in terms of IP addresses, domains and subdomains, physical addresses, or encompassing statements like "all owned assets."
+> Rules of Engagement (RoE) - Defines HOW in-scope assets are to be tested, specifying what methods, tools, and techniques are permissible - it is the closest we get to agreeing on ethical hacking before the engagement. RoE are particularly crucial in Red Team Operations, which focus on adversary emulation to test an organization's Blue Team. These operations typically have fewer restrictions to realistically simulate adversarial behavior. RoE must be clearly communicated and agreed upon by all stakeholders to ensure a controlled and effective testing environment.
 
-Post-Engagement
-Pentest Report - This describes what you've done, how you've done it, the vulnerabilities you've discovered, their level of risk, and recommended mitigations. You'll also want to include some evidence, such as screenshots and logs, to support your findings.
-Letter of Attestation - Provided to publicly validate the company's performance in terms of controls, usually to satisfy/are compliant with certain regulatory bodies. Such bodies include PCI-DSS for those with payment systems, HIPAA for healthcare providers, CISA for critical infrastructure, ISO 27001 (for business contexts) and so on. This may be included along with the pentest report.
+**Post-Engagement**
+> Pentest Report - This describes what you've done, how you've done it, the vulnerabilities you've discovered, their level of risk, and recommended mitigations. You'll also want to include some evidence, such as screenshots and logs, to support your findings.
+> Letter of Attestation - Provided to publicly validate the company's performance in terms of controls, usually to satisfy/are compliant with certain regulatory bodies. Such bodies include PCI-DSS for those with payment systems, HIPAA for healthcare providers, CISA for critical infrastructure, ISO 27001 (for business contexts) and so on. This may be included along with the pentest report.
+
+**General Penetration Framework**
+1. Planning and Preparation
+2. Information Gathering
+3. Attacking
+4. Post-Attacking
+5. Reporting
+
+**PTES ( Penetration Testing Execution Standard (PTES))**
+1. Pre-engagement Interactions
+2. Intelligence Gathering
+3. Threat Modeling
+4. Vulnerability Analysis
+5. Exploitation
+6. Post-Exploitation
+7. Reporting
+
+**OSSTMM - Open Source Security Testing Methodology Manual**
+1. Operational Security Testing
+> Information Security - Protection of information assets through testing of policies, procedures, and controls.
+> Process Security: Involves assessing operational processes to ensure they are secure and not prone to exploitation.
+> Internet Technology Security: Covers testing of internet-facing technologies, including web applications, servers, and network devices.
+> Communications Security: Focuses on evaluating the security of communication channels, including email, VoIP, and other communication protocols.
+> Wireless Security: Provides guidelines for testing wireless networks and devices to identify vulnerabilities.
+> Physical Security: Involves assessing the physical security measures in place to protect assets and information.
+> Human Security: Examines the human factors in security, including social engineering and awareness training.
+
+2. Analytical Models
+> Risk Analysis: Provides models for assessing and quantifying risks identified during testing.
+> Trust Analysis: Examines the levels of trust within the organization and its systems.
+> Metrics and Measurements: Offers guidance on how to measure and quantify security performance and effectiveness.
+
+3. Security Testing Methodologies
+> Penetration Testing: Provides detailed steps and techniques for conducting penetration tests to identify vulnerabilities and weaknesses.
+> Vulnerability Assessment: Focuses on identifying and evaluating vulnerabilities in systems and networks.
+> Security Audits: Covers the process of auditing security controls and practices to ensure compliance and effectiveness.
+> Forensics: Provides guidelines for conducting forensic investigations following a security incident.
+
+4. Testing Verification and Metrics
+> Verification: Details the processes for verifying the results of security tests to ensure accuracy and reliability.
+> Metrics: Offers a set of metrics to measure the effectiveness of security measures and testing efforts.
+> Reporting: Provides guidelines for documenting and reporting the results of security tests.
+
+**Open Web Application Security Project (OWASP)**
+> OWASP Web Security Testing Guide
+> OWASP Mobile Security Testing Guide
+> OWAS Firmware Security Testing Guide
+
+**NIST Cyber Security Framework (CSF)**
+> CSF Core - The primary component, which outlines standards, best practices, and guidelines that provide a high-level, strategic view of an organization's management of cybersecurity risk. It is structured according to six continuous and concurrent functions: Govern, Identify, Protect, Detect, Respond, and Recover.
+> CSF Organizational Profiles - Describe an organization’s current and/or target security posture in terms of the Core outcomes. See the following NIST-provided example of how an organization might create such a profile:
+> CSF Tiers - Categorizes the rigor of an organization’s risk management policy from 1 to 5.
+
+The NIST CSF can help offensive security professionals to:
+> Understand the broader context of an organization’s security posture and help them assess and improve ( Govern) their current risk management strategies.
+. Help the organization Identify critical assets and processes in pre-engagement conversations
+> Protect the company by measuring existing controls and identifying gaps.
+> Design scenarios to effectively test the org’s Detect, Respond, and Recover functions - especially relevant in Red Team engagements.
+> Remain aligned with industry best practices, making it easier to provide the client with actionable recommendations
+
+NIST also provides Special Publications that complement the CSF with detailed guidelines and goals that support the CSF’s broader goals by providing detailed, actionable controls and testing methodologies. Two are especially relevant to the offensive security professional:
+> NIST SP 800-115: Technical Guide to Information Security Testing and Assessment - guides planning, execution, and reporting of penetration tests.
+> NIST SP 800-53: Security and Privacy Controls for Information Systems and Organizations. Consists of 18 control families, such as the highly relevant CA (Security Assessment and Authorization), which details, among other things, the execution of security assessments. For example, check out the controls outlined under C-8, which should look familiar.
+>> CA-8 (1) Independent Penetration Agent or Team - testing the organizations systems or system components.
+>> CA-8 (2) Red Team Exercises - extend the penetration test to the organizational systems (i.e., their Defensive Security team, aka Blue Team).
+>> CA-8 (3) Facility Penetration Testing - test the organization’s physical security! Break into buildings and stuff - neat!
+
+**Cyber Kill Chain** 
+Phases:
+Identification
+Dispatch Forces
+Engage Target
+Destroy Target
+
+Operational Models:
+Observe
+Orient
+Decide
+Act
+
+Established Models:
+Reconnaissance
+Weaponize
+Exploit
+Take action to achieve your goals
+
+Lockheed Martin and The Cyber Kill Chain (CKC)
+1. Reconnaissance - The discovery or information-gathering phase. This includes passive reconnaissance &  active reconnaissance
+2. Weaponization - we create malicious software ( malware) that takes advantage of ( exploits) the vulnerability we've discovered in the Reconnaissance phase with the intent of running malicious code (the payload) to generate the intended effect - such as data theft or a reverse shell connection to gain access to the target machine.
+3. Delivery -  deliver our malware that consists of our exploit code and the payload. We can do this several ways, such as via spearphishing emails, uploading through a website, plugging in a USB drive, and so forth. Delivery may be as easy as injecting our malware through a vulnerable area of a website (such as a file upload functionality) or we may rely on a human to run it (such as a spearphishing email) and so require some social engineering.
+4. Exploitation - the malware is activated to achieve the desired effect on our target. This is where our payload finds purchase.
+5. Installation - This phase involves establishing persistence, typically through a backdoor that we can use if our initial access ever gets cut. However, what if the exploitation phase already provided us the access we needed to quickly achieve our goals? In that case, we'd skip straight to the last CKC phase - Taking Actions on Objectives.
+When performing external penetration tests, proof of exploit is often the end goal, since we don't plan to stick around on the network. In contrast, Red Team Operations (RTO) entail testing the organization's Blue Team, which will often mean longer engagements that involve sticking around on the network to press further.
+6. Command & Control (C2) - In this phase, we establish a channel for remotely manipulating the compromised system. This could be an IRC server, a public service like GitHub, an RSS feed, or any other channel that can facilitate bidirectional communication. This is another phase that better represents Red Team Operations (RTO) and adversary emulation.
+Common C2 frameworks include Cobalt Strike, Mythic, Havoc, Brute Ratel C4, and Powershell Empire. Check out the following resource for more on C2 architecture and frameworks: https://www.stationx.net/what-is-a-c2-framework/
+7. Actions on Objectives - In this phase, we achieve our ultimate goals, such as data exfiltration, destruction, denial-of-service attacks - or perhaps just a screenshot to add to your pentest report to show that you were here.
+
+ATT&CK Matrices
+The primary feature of MITRE ATT&CK is the ATT&CK matrix, which organizes threats based on Tactics & Techniques. There are several matrices:
+
+ATT&CK Enterprise - Covers adversarial behaviors against enterprise IT networks.
+ATT&CK Mobile - Covers adversarial behaviors against mobile devices.
+ATT&CK ICS - Covers adversarial behaviors against industrial control systems (ICS).
+
+Tactics and Techniques
+Initial Access - gain entry into the target network or system
+Persistence - maintain access to the target network or system
+Privilege Escalation - gain higher-level permissions on target network or system
+Phishing- sending deceptive emails to trick users into providing access credentials or downloading malicious software.
+
+Comparing MITRE ATT&CK and CKC
+MITRE ATT&CK differs from Lockheed Martin's Cyber Kill Chain (CKC) in its level of detail. While ATT&CK Tactics can be viewed as phases in a chain, it does not assume an adversary uses all 14 Tactics or does so sequentially. Instead, ATT&CK complements CKC by providing detailed information for meticulous planning and threat identification.
+
+Unified Kill Chain (UKC) - 18 phases (In, Through, Out)
+In (Initial Foothold): 
+Reconnaissance ( ATT&CK Tactic TA0043) - gather information
+Resource Development ( ATT&CK Tactic TA0001) - set up your infrastructure, such as your exploit/payload or C2 infrastructure (like Weaponization in the CKC!)
+Delivery ( ATT&CK Tactic TA0001) - transmit your weaponized object to the target environment.
+Social Engineering ( ATT&CK Tactic TA0001) - manipulate people to perform actions that aid your objectives
+Exploitation ( ATT&CK Tactic TA0002) - abuse vulnerabilities to exploit systems (such as executing code on that system)
+Persistence ( ATT&CK Tactic TA0003) - achieve a persistent presence on a system or network
+Defense Evasion ( ATT&CK Tactic TA0005) - evade the target's preventative (necessary for successful exploitation) or detective measures (more common in Red Team Operations, where you're objectives include avoiding detection by the Blue Team)
+Command & Control ( ATT&CK Tactic TA0011) - establish a communications channel between compromised systems and the attacker (leveraging infrastructure set up in Resource Development stage)
+
+Through (Network Propagation)
+Pivoting ( ATT&CK Tactic TA0008) - leverage compromised systems to access other systems in the target's network infrastructure that are otherwise innaccessible
+Discovery ( ATT&CK Tactic TA0007) - gather information about the compromised system and its network environment
+Privilege Escalation ( ATT&CK Tactic TA0004) - obtain higher-permissions on a compromised system or network
+Execution ( ATT&CK Tactic TA0002) - execute code on local or remote systems; simillar to Exploitation from the In phase, but not necessarily exploiting vulnerability.
+Credential Access ( ATT&CK Tactic TA0006) - obtain system, service, or domain credentials to obtain control over target accounts
+Lateral Movement ( ATT&CK Tactic TA0008) - move horizontally through the network to access other systems (in contrast to vertical movement as in Privilege Escalation)'
+
+Out (Action on Objectives)
+Collection ( ATT&CK Tactic TA0009) - identify and gather sensitive data, usually to manipulate/destroy, or exfiltrate.
+Exfiltration ( ATT&CK Tactic TA0010) - remove discovered sensitive data from target network
+Impact ( ATT&CK Tactic TA0040) - manipulate or destroy discovered sensitive data
+Objectives (None!) - this phase is about understanding the attacker's motivation, and is unique to the UKC! What is the strategic goal?
+
+What are Cyber Kill Chains Good for? (Absolutely Something)
+Attack Planning - Systematically plan and conduct attacks, ensuring coverage of all potential vectors and a coordinated effort.
+Adversary Emulation - By studying models like MITRE ATT&CK, offensive teams can better understand the typical behaviors and techniques used by adversaries, allowing them to mimic real-world attacks more accurately during penetration tests and red team exercises.
+Gap Analysis - Identify specific stages where defenses are weak or non-existent.
+Improve Detection and Response - By executing known attack techniques, offsec professionals can assess whether the client has the proper controls in place to detect and prevent them.
+Implementing Countermeasures - Understanding how attacks unfold allows security teams to implement specific defenses at each stage of the attack.
+Training and Awareness - Serve as educational tools for both offensive and defensive teams. They provide a framework for understanding the stages of an attack, which can be used for training security personnel to recognize and respond to various attack vectors (you know - like this Course).
+Detailed Reporting - Offensive security teams use the structure provided by kill chain models to create detailed reports of their activities. These reports outline each stage of the attack, the methods used, and the outcomes, making it easier for stakeholders to understand the nature and impact of the tests.
+Communication with Stakeholders - Using well-established models like the Cyber Kill Chain or MITRE ATT&CK, offensive security teams can effectively communicate their findings and the importance of specific security measures to non-technical stakeholders.
+
+Reconnaissance and Enumeration:
+information-gathering basics. Enumeration, a subset of reconnaissance, refers to a more detailed inspection of assets we discover—basically just a higher-resolution form of reconnaissance.
+
+ Hacking is a creative enterprise, and like most artists, you’ll find they all have different approaches, different brush strokes, and different processes. There is no right answer. 
+
+Active Recon: Active reconnaissance includes methods like enumeration and scanning, which involve actively probing the target to gather information. Another active approach is vulnerability assessment, which involves scanning for or enumerating vulnerabilities.
+
+Example Methods:
+
+Ping Sweeping: Sending ICMP echo requests to identify live hosts.
+Port Scanning: Using tools to scan the target infrastructure to identify open/unfiltered ports and the services running on them.
+Traceroute: Mapping the path packets take to reach the target. This helps us identify other systems and controls in place, thereby giving us a better understanding of the network.
+Service Fingerprinting: Identifying the specific versions of services running on open ports.
+Banner Grabbing: Capturing the initial response from services to gather information about software versions and configurations.
+
+Passive Reconnaissance: we gather information about the target without directly interacting with their systems. The primary way we do this is by performing Open Source Intelligence (OSINT), which entails gathering information about our target from public sources
+
+Example Methods:
+
+SSL Certificates:  Checking what certificates the company has requested to facilitate HTTPS access to their website. A great place to find domain and sub-domain names!
+Website Analysis: Reviewing the company website without doing anything beyond what a typical user would do. Like, checking their About Us page is fine. Guessing random paths on the site ( mytarget.com/admin), not so much.
+WHOIS Queries: Retrieving domain registration information.
+DNS Queries: Collecting DNS records such as MX, A, and CNAME records.
+Search Engines: Using search engines to find information about the target, which have already performed active recon for you!
+Publicly Available Reports: Analyzing annual reports, court records, press releases, news articles, and other publicly available documents.
+Social Media: Gathering information from social media platforms.
+
+Enumeration Contexts
+Remote Enumeration: we’re doing this thing from afar. This is the kind of enumeration that follows our initial broad recon.
+Local Enumeration: This typically happens post-exploitation, focusing on the systems we’ve gained access to, seeking sensitive data, additional privileges, or ways to access other systems.
+
+Infrastructure Enumeration
+Passive reconnaissance reveals large areas of the target's attack surface that require further inspection. This is usually remote, but results may vary depending on whether we scan from our own computer or one we’ve already compromised..
+Key Activities:
+
+Identifying live hosts
+Discovering domains and sub-domains.
+Mapping the network topology, including network partitions, nodes, and controls.
+
+Host Enumeration
+You may have found specific systems in initial recon that need more detailed exploration (remote), or you may already have access to a machine and want to explore it to see what information you can obtain and how it might help access other systems (local).
+
+Key Activities:
+
+Determining open ports
+Identifying running services
+Determining OS details (flavor, version, enabled features).
+Identifying accounts/permissions.
+
+Service Enumeration
+After identifying running services (and likely versions) on a host, it’s time to interact with them intentionally using their protocols. If nothing interesting or vulnerable was found in prior phases, this is where we dive into the details, and where we'll spend most of our time.
+In host enumeration, services worth further inspection will be found, each accessible through its protocol. For example, if we find a web server on port 443, we’ll open a browser and examine it in more detail. Or if we find a file-sharing service, we might try to enumerate some users available on it. Here are some common services you'll run into that are worth talking to:
+
+Common Services:
+
+NetBIOS Enumeration: Gathering information about shared resources, user accounts, and services on Windows networks.
+SNMP Enumeration: Extracting information from devices that use the Simple Network Management Protocol (SNMP). Can extract network settings, interfaces, IP addresses, as well as running processes.
+LDAP Enumeration: LDAP (Lightweight Directory Access Protocol) is used for accessing and maintaining distributed directory information services over an IP network. Can extract usernames, email addresses, groups, departments, and servers within the directory.
+DNS Zone Transfer: DNS Zone Transfer is a mechanism that allows DNS servers to share information. It can be misconfigured, allowing attackers to retrieve entire DNS zone files, which contain details about the domain and its associated IP addresses.
+NFS Enumeration: NFS (Network File System) allows users to access files over a network as if they were on their local disks. Enumeration can reveal shared directories and files.
+SMB Enumeration: SMB (Server Message Block) is a protocol for sharing files, printers, and other resources. Enumeration can award you with usernames, service information, files, folders, printers - all that good stuff worth sharing.
+HTTP Enumeration: HTTP (HyperText Transfer Protocol), used to deliver us that sweet, sweet web traffic! Aside from the web service version, enumerating web servers revolves around finding all the paths (files and directories) that live on it.
+
+Tool Overview
+Port Scanners: nmap, rustscan, unicornscan, masscan, kiterunner
+Network Discovery: netdiscover, ssb, SNMPwalk, ldapsearch, bloodhound
+Domain Discovery: dnsenum, crt.sh, dnsdumpster, subfinder, amass
+Content Discovery: Gobuster, Dirbuster, Feroxbuster
+Web Application Testing: Burp suite, OWASP ZAP, Nuclei
+Vulnerability Scanning: SQLmap, Nikto
+Techstack Analysers: Wappalyzer, Builtwith, Whatruns
+Internet Scanners: Shodan, Censys, Netlas, Greynoise
+Web Archives: Wayback, Common Crawl
+Operating System Enumeration: PEASS, enum4linux
+Search Engines: Google, Bing, Duckduckgo, Brave, Yandex, Baidu
+Recon Frameworks: recon-ng, reconftw, rengine
+
+PenTest Scenario 
+Let's take an example run to demonstrate how we might integrate the tools discussed above. In this mock assessment, we’re targeting Crybaby LLC. They've indicated that all owned assets are in scope and provided us with a domain name to start: crybaby.it.
+
+And here we go:
+
+Search Engines
+Tool: Google
+Result: We’ve Googled our target and discovered a subdomain, mail.crybaby.it. Likely a mail server, but not a major find yet. Moving on.
+Domain Discovery
+Tool: dnsenum
+Result: Using dnsenum, we discovered mail.crybaby.it and a development environment, dev.crybaby.it. That second one looks interesting.
+Port Scanning
+Tool: Nmap
+Result: No open ports on dev.crybaby.it, but several on mail.crybaby.it: ports 80 (HTTP), 443 (HTTPS), 25 (SMTP), and 161/162 (SNMP). Unexpectedly, there's a web server and an SNMP service. Let’s check out SNMP.
+Network Discovery
+Tool: SNMP Walk
+Result: We’ve got details about network devices and their configurations, including the community string (similar to a password) used for queries. This could be useful later. Now, let’s explore the web service.
+Techstack Analysis
+Tool: Wappalyzer
+Result: We’ve found a login page on dev.crybaby.it. Wappalyzer shows it’s running Apache, PHP, MySQL, and some popular JavaScript frameworks, but no known vulnerabilities. Time to dig deeper.
+Web Application Testing
+Tool: Burp Suite
+Result: Using Burp Suite, we’ve reviewed calls made by the website and identified potential SQL injection points. Sweet! Let’s try exploiting these.
+Vulnerability Analysis
+Tool: SQLmap
+Result: We’ve run SQLmap and were able to detect and exploit some SQL injections! That’s going on our report! Woohoo. Unfortunately, we haven’t found any user accounts that can get us past that login. Let’s jump back into recon and see if any of those internet scanners have identified some vulnerabilities that can save us some time on that front.
+Internet Scanning
+Tool: Shodan
+Result: Heck yeah, Shodan - apparently this server is using default credentials. Or, at least, it was a week ago when Shodan performed its scan. Turns out, they don’t work. Bummer! But, if they are inclined to use default credentials, maybe there are other places that have them....
+Web Archives
+Tool: Wayback Machine
+Result: Wayback Machine shows a snapshot of dev.crybaby.it/adm. Turns out this page is still up and default credentials work here! Now we have access to an authenticated area of the web application - but not the server itself.
+Content Discovery
+Tool: Feroxbuster
+Result: Feroxbuster finds us a file upload section! Uploading a PHP file gives us a remote shell, but with limited privileges. Let’s see what we can do next.
+Host Enumeration
+Tool: LinPEAS
+Result: LinPEAS provides a color-coded report of possible privilege-escalation vectors. Our user has SUID privileges for /bin/cp, allowing us to add a new privileged user and gain full access.
+
+
+
+
