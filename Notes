@@ -292,5 +292,17 @@ Tool: LinPEAS
 Result: LinPEAS provides a color-coded report of possible privilege-escalation vectors. Our user has SUID privileges for /bin/cp, allowing us to add a new privileged user and gain full access.
 
 
+OSINT, or Open-Source INTelligence, refers to the process of gathering information from publicly accessible sources (open-source), whether for free or for purchase, and analyzing that information to develop insights about a target (Intelligence)
+
+
+OSINT:
+
+Viewing the company’s LinkedIn profile.
+Viewing previous scans done by third-party services.
+Viewing domain registration details
+Browsing the company website
+
+
+
 
 
